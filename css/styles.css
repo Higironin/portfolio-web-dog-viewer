@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1FA6AD;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    padding: 1.5em;
+    margin: 0 0 1em 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #FA9C5E;
+    font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-basis: 275px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    flex-basis: 275px;
+    border: none;
+    color: #1FA6AD;
+    background-color: #242424;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    border: 2px solid #FA9C5E;
+}
+
+button:hover {
+    color: #242424;
+    background-color: #1FA6AD;
+    cursor: pointer;
+}
+
+button:active {
+    color: #FA9C5E;
+    background-color: rgba(31, 166, 173, 0.329);
+}
+
+select {
+    flex-basis: 275px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    text-align-last: center;
+    border-radius: 5px;
+    color: #1FA6AD;
+    background-color: #242424;
+    border: 2px solid #FA9C5E;
+}
+
+div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    border: 2px solid black;
+    display: none;
+}
+
+p {
+    margin: 1em 0 0 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.5em;
+    padding: 0.5em;
+    border: 2px solid #FA9C5E;
+    color: #1FA6AD;
+    background-color: #242424;
+    border-radius: 5px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.spinner {
+    font-size: 75px;
+    text-align: center;
+    animation: 2s spin linear infinite;
+    margin-top: 2.5em;
+    display: none;
+}
+
+.show {
+    display: block;
+}
